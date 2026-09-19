@@ -1,10 +1,17 @@
+:root {
+    --color: blueviolet;
+    --font-size: 20px;
+    --background-color: #f06;
+
+}
+
 nav {
-    background-color: blueviolet;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--color);
     display: block;
     padding: 10px;
 
