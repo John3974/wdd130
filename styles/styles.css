@@ -1,8 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+
+}
+
+body {
+    background-color: ;
+}
+
 :root {
     --color: blueviolet;
     --font-size: 20px;
     --background-color: #f06;
 
+}
+
+/* class secelctor*/
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0/10%);
+    padding: 1rem;
+    background-color: #add;
+    color: #000;
 }
 
 nav {
@@ -46,10 +66,11 @@ main img {
     height: auto;
     padding: 20px;
     box-shadow: #333;
+    float: right;
 }
 
 aside {
-    width: auto;
+    width: 20em;
     margin: 1rem;
     border: 1px solid rgb(0, 0, 0/0.2);
     padding: 1rem;
@@ -62,6 +83,12 @@ aside img {
     width: 200px;
     height: auto;
 
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 main img {
