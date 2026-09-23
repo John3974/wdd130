@@ -1,30 +1,27 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New  Roman", 'Georgia', serif;
-    --body-font: Arial, Helvetica, sans-serif;
-
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
+/* Page text */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-
 }
 
+/* Center the main page */
 header,
 main,
 footer {
@@ -32,12 +29,14 @@ footer {
     margin: 0 auto;
 }
 
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Basic spacing */
 nav,
 p,
 section,
@@ -46,32 +45,131 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-align: none;
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
+/* Logo */
+header > img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero area */
 .hero {
     position: relative;
 }
 
-.hero img {
+/* Main hero image */
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+/* Company name over the image */
+.hero h1 {
     position: absolute;
+
     top: 20px;
     width: 100%;
+
     padding: 16px;
+
     text-align: center;
+
     opacity: 0.7;
+
     background-color: var(--accent1-color);
-    color: #fff;
+    color: white;
 }
 
+/* Article over the hero image */
+.hero article {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    padding: 15px;
+}
+
+/* Happy client image */
 .hero article img {
     float: right;
+
     width: 125px;
+
+    margin-left: 15px;
 }
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Social media */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+/* Remove link underline from social icons */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
+
+```
