@@ -23,10 +23,12 @@ body {
 
 /* Center the main page */
 header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+
+q main,
+{
+width: 840px;
+margin: 0 auto;
+
 }
 
 /* Headings */
@@ -145,7 +147,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
     color: white;
 
@@ -171,5 +173,3 @@ footer p {
     width: 35px;
     height: 35px;
 }
-
-```
