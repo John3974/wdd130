@@ -4,111 +4,134 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta name="description"
-          content="get every information or help from our contactline at any time and get quick responce to any information you might need.">
+            content="Contact White Water Rafting Company for rafting reservations, questions, and information about our river adventures.">
+
         <meta name="author" content="John Otieno">
-        <title>contact</title>
-        <link rel="stylesheet" href="styles/contact.css">
 
+        <title>White Water Rafting | Contact Us</title>
 
+       <link rel="stylesheet" href="styles/contact.css">
     </head>
 
     <body>
+
         <header>
-            <img src="images/z-raftingbw.png" alt="Rafting site">
+            <img src="images/z-raftingbw.png"White Water Rafting Company logo">
+
             <nav>
-
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About US</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">contact_us</a></li>
-
-
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
             </nav>
         </header>
+
         <main>
-            <h1>Send Us A Message</h1>
-            <p>White Waters Rafting</p>
-            <p>Phone:0759984324</p>
-            <p>Email:<a href="mailto:">Johnotieno@gmail.com</a></p>
-            <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15956.338700837749!2d37.0078224!3d-1.09878!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1791056984467!5m2!1sen!2ske"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+
+            <div class="contact-header">
+                <h1>White Water Rafting Company</h1>
+
+                <p>
+                    <strong>123 Main River Street</strong><br>
+                    Kolob, California<br>
+                    <strong>+1 999 999 9999</strong><br>
+                    <strong>info@whitewater.com</strong>
+                </p>
             </div>
 
+            <section class="contact-info">
 
-            <form>
-                <section>
-                    <fieldset>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=Kolob+Canyons,+Utah&output=embed"
+                        title="Map showing the location of White Water Rafting Company" width="100%" height="300"
+                        loading="lazy">
+                    </iframe>
+                </div>
 
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" required>
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
 
-                        <label for="email">email</label>
-                        <input type="email" id="email" name="email" required>
+                    <form action="#" method="post">
 
-                    </fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
 
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                    <fieldset>
+                        <fieldset>
+                            <legend>Message Purpose</legend>
 
-
-                        <label>
-                            <label>
-
-                                <input type="radio" name="purpose" value="general">General
-                                Inquiry
+                            <label for="general">
+                                <input type="radio" id="general" name="purpose" value="general" required>
+                                General Inquiry
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="reservation">Reservation
-                                Quations
+
+                            <label for="reservation">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
+                                Reservation Question
                             </label>
-                            <label>
-                                <input type="radio" name="purpose" value="suggestion">
+
+                            <label for="suggestion">
+                                <input type="radio" id="suggestion" name="purpose" value="suggestion">
                                 Website Suggestion
                             </label>
-                    </fieldset><label for="message">Message:</label>
-                    <fieldset>
+                        </fieldset>
 
+                        <label for="message">Message</label>
 
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
 
-                        <label class="checkbox-label">
-                            <input type="checkbox" type="checkbox" id="newsletter" name="newsletter"
-                              value="yes">
-                            please subscribe me to the monthly newsletter
-
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Please subscribe me to the monthly newsletter
                         </label>
 
+                        <button type="submit" class="button">
+                            Get in Touch!
+                        </button>
 
-                    </fieldset>
-                    <button type="submit">Get in Touch</button>
-                </section>
+                    </form>
+                </div>
 
+            </section>
 
-            </form>
+            <section class="employee-section">
 
+                <h2>We Are Here to Serve You</h2>
+
+                <div class="employees">
+
+                    <figure>
+                        <img src="images/emp2peg.jpeg" alt="White Water Rafting Company employee">
+                        <figcaption>River Guide</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/emp3jpeg.jpeg" alt="White Water Rafting Company employee">
+                        <figcaption>Safety Coordinator</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/emp4.jpeg" alt="White Water Rafting Company employee">
+                        <figcaption>Customer Experience Manager</figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
 
         </main>
 
-        <section>
-            <h2>We Are Here To Serve You</h2>
-            <p>THere We Offer High Quality Feedback To Our Cliants For Easier And softer
-                Experiance When Interacting With Our Services.We Help You Get What You Like !!!
-            </p>
-            <figure>
-                <img src="images/emp2peg.jpeg" width="125" height="125" alt="raft">
-                <img src="images/emp3jpeg.jpeg" width="125" height="125" alt="raft">
-                <img src="images/emp4.jpeg" width="125" height="125" alt="raft">
-
-            </figure>
-        </section>
-
-
         <footer>
-            <p>Hotline service</p>
+
+            <p>
+                &copy; 2026 White Water Rafting Company - John Otieno
+            </p>
+
+
             <nav class="socialmedia">
                 <a href="pinterest.com">
                     <img src="images/pinterest.svg" width="75" height="75" alt="pinterest">
@@ -116,15 +139,18 @@
                 <a href="Facebook.com">
                     <img src="images/facebook-bw.svg" width="75" height="75" alt="pinterest">
                 </a>
-
-
+            
+            
                 <a href="snapchat.com">
                     <img src="images/snapchat-square.svg" width=" 75" height="75" alt="facebook">
                 </a>
+            
+        
 
             </nav>
 
         </footer>
+
     </body>
 
 </html>
