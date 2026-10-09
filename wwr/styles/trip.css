@@ -1,0 +1,247 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    background-color: var(--accent2-color);
+
+}
+
+/* Logo */
+header img {
+    width: 180px;
+    height: auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    padding: 10px;
+    text-overflow: var(--accent2);
+
+}
+
+nav {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* TRIPS PAGE: HERO SECTION      */
+/* ============================= */
+
+.trips-hero {
+    background-color: var(--accent1-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 70px 25px;
+    margin-bottom: 40px;
+}
+
+.trips-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.trips-hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.trips-hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.trips-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.trips-button:hover {
+    background-color: var(--accent2-color);
+    color: #222;
+}
+
+/* ============================= */
+/* TRIPS PAGE: TRIP CARDS        */
+/* ============================= */
+
+.trip-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+.trip-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.trip-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.trip-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: var(--heading-font);
+}
+
+.trip-card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.trip-card ul {
+    padding-left: 20px;
+    margin-top: auto;
+}
+
+.trip-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* TRIPS PAGE: COMPARISON TABLE  */
+/* ============================= */
+
+.trip-table-section {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+.trip-table-section > h2,
+.trip-table-section > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.trip-table-section thead {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.trip-table-section thead th {
+    color: white;
+}
+
+.trip-table-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-table-section tbody tr:hover {
+    background-color: #e9c46a;
+}
+
+/* ============================= */
+/* TRIPS PAGE: FINAL CTA         */
+/* ============================= */
+
+.trip-contact {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+.trip-contact h2 {
+    margin-bottom: 15px;
+}
+
+.trip-contact p {
+    line-height: 1.7;
+}

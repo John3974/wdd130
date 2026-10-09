@@ -8,12 +8,14 @@
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
 /* Remove default spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Header */
 header {
 
@@ -21,7 +23,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
 }
 
@@ -31,6 +33,7 @@ header img {
     height: auto;
 
 }
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -51,7 +54,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 .contact-header {
     text-align: center;
@@ -183,4 +185,20 @@ nav a {
 
 .employees figcaption {
     font-weight: bold;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    background-color: var(--secondary-color);
+
+    color: white;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }

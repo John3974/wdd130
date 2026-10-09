@@ -46,7 +46,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
 }
 
@@ -60,10 +60,8 @@ main {
 header img {
     width: 180px;
     height: auto;
-
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -71,7 +69,7 @@ nav {
     gap: 25px;
     list-style: none;
     padding: 10px;
-    text-overflow: var(--accent2-color);
+    text-overflow: var(--accent2);
 
 }
 
