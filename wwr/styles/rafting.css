@@ -12,7 +12,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-
 /* =========================
    GENERAL STYLING
 ========================= */
@@ -49,7 +48,6 @@ img {
     height: auto;
 }
 
-
 /* =========================
    HEADER
    CSS GRID
@@ -69,7 +67,6 @@ header img {
     width: 180px;
     height: auto;
 }
-
 
 /* =========================
    HEADER NAVIGATION
@@ -95,8 +92,8 @@ header nav a:hover,
 header nav a:focus {
     color: #ffffff;
     background-color: var(--accent1-color);
+    text-decoration: underline;
 }
-
 
 /* =========================
    MAIN CONTENT
@@ -106,7 +103,6 @@ main {
     width: 100%;
     margin: 0 auto;
 }
-
 
 /* =========================
    HERO SECTION
@@ -118,7 +114,7 @@ main {
     overflow: hidden;
 }
 
-.hero>img {
+.hero > img {
     display: block;
     width: 100%;
     height: 500px;
@@ -158,7 +154,6 @@ main {
     margin-bottom: 0;
 }
 
-
 /* =========================
    HISTORY SECTION
    CSS GRID
@@ -191,7 +186,6 @@ main {
     justify-self: center;
     border-radius: 8px;
 }
-
 
 /* =========================
    ADVENTURES SECTION
@@ -232,7 +226,6 @@ main {
     color: var(--accent1-color);
 }
 
-
 /* =========================
    FOOTER
 ========================= */
@@ -250,7 +243,6 @@ footer {
 footer p {
     margin: 0;
 }
-
 
 /* =========================
    SOCIAL MEDIA
@@ -276,7 +268,6 @@ footer p {
     height: 35px;
     object-fit: contain;
 }
-
 
 /* =========================
    TABLET LAYOUT
@@ -317,7 +308,6 @@ footer p {
     }
 }
 
-
 /* =========================
    MOBILE LAYOUT
 ========================= */
@@ -339,7 +329,7 @@ footer p {
         gap: 5px;
     }
 
-    .hero>img {
+    .hero > img {
         height: 520px;
     }
 

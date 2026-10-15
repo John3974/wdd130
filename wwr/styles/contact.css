@@ -1,5 +1,3 @@
-
-
 /* ========================================
    WHITE WATER RAFTING COMPANY
    Contact Us Page
@@ -73,6 +71,7 @@ header nav a:hover,
 header nav a:focus-visible {
     color: #fff;
     background-color: var(--accent1-color);
+    text-decoration: underline;
 }
 
 /* ========================================
