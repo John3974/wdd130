@@ -73,6 +73,10 @@ header nav a:focus-visible {
     background-color: var(--accent1-color);
     text-decoration: underline;
 }
+header nav a[aria-current="page"] {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
 
 /* ========================================
    MAIN CONTENT

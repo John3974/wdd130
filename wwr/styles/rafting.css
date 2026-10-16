@@ -1,389 +1,271 @@
-/* =========================
-   CSS VARIABLES
-========================= */
+
 
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #264653;
+    --secondary-color: #055a05;
+    --accent-color: #e9c46a;
+    --background-color: #f4f1ea;
+    --text-color: #17252a;
 
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* =========================
-   GENERAL STYLING
-========================= */
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--text-color);
+    background-color: white;
     line-height: 1.6;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-}
-
-h2 {
     color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 15px;
+    padding: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* =========================
-   HEADER
-   CSS GRID
-========================= */
+/* =====================================
+   2. HEADER
+  
+===================================== */
 
 header {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    gap: 20px;
-    padding: 15px 5%;
-    background-color: var(--secondary-color);
+
+    padding: 15px 30px;
+
+    background-color: var(--primary-color);
 }
 
 header img {
-    display: block;
-    width: 180px;
+    width: 120px;
     height: auto;
 }
 
-/* =========================
-   HEADER NAVIGATION
-   FLEXBOX
-========================= */
+/* =====================================
+   3. NAVIGATION
+ 
+===================================== */
 
 header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 }
 
 header nav a {
-    color: #17313b;
+    padding: 12px 20px;
+
+    color: white;
+    background-color: var(--primary-color);
+
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 14px;
-    border-radius: 5px;
 }
 
-header nav a:hover,
-header nav a:focus {
-    color: #ffffff;
-    background-color: var(--accent1-color);
-    text-decoration: underline;
+header nav a:hover {
+    color: var(--text-color);
+    background-color: var(--accent-color);
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
+header nav a[aria-current="page"] {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+/* =====================================
+   4. MAIN CONTENT
+===================================== */
 
 main {
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* =====================================
+   5. HERO SECTION
+===================================== */
 
 .hero {
     position: relative;
-    width: 100%;
-    overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.hero > img {
+.hero>img {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 0;
+
     width: 100%;
     padding: 15px;
+
+    color: white;
+    background-color: rgba(38, 70, 83, 0.9);
+
     text-align: center;
-    color: #ffffff;
-    background-color: rgba(38, 70, 83, 0.92);
 }
 
 .hero article {
     position: absolute;
-    top: 110px;
+    bottom: 20px;
     left: 5%;
-    right: 5%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
+
+    width: 90%;
+    padding: 15px;
+
+    background-color: white;
 }
 
 .hero article img {
     float: right;
+
     width: 180px;
-    height: auto;
-    margin: 0 0 15px 20px;
-    border-radius: 6px;
+    height: 130px;
+
+    margin-left: 15px;
+
+    object-fit: cover;
 }
 
 .hero article p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
-/* =========================
-   HISTORY SECTION
-   CSS GRID
-========================= */
+/* =====================================
+   6. HISTORY SECTION
+
+===================================== */
 
 .history {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+
     align-items: center;
-    padding: 40px 5%;
+    gap: 20px;
+
+    padding: 20px 0 30px;
+
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .history h2 {
     grid-column: 1 / 4;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .history p {
-    margin-bottom: 0;
+    padding: 10px;
 }
 
 .history img {
-    display: block;
     width: 100%;
-    max-width: 350px;
-    height: 230px;
+    height: 250px;
+
     object-fit: cover;
-    justify-self: center;
-    border-radius: 8px;
 }
 
-/* =========================
-   ADVENTURES SECTION
-========================= */
+/* =====================================
+   7. ADVENTURES SECTION
+===================================== */
 
 .adventures {
-    padding: 40px 5%;
-    background-color: #f5f5f5;
+    padding: 30px 0;
 }
 
 .adventures h2 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 18px;
-    align-items: start;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
 }
 
 .adventure-gallery figure {
-    min-width: 0;
+    margin: 0;
     text-align: center;
 }
 
 .adventure-gallery img {
-    display: block;
     width: 100%;
-    height: 160px;
+    height: 150px;
+
     object-fit: cover;
-    border-radius: 6px;
 }
 
 .adventure-gallery figcaption {
-    margin-top: 10px;
+    padding: 10px 5px;
+
+    color: white;
+    background-color: var(--primary-color);
+
+    font-family: var(--heading-font);
     font-weight: bold;
-    color: var(--accent1-color);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* =====================================
+   8. FOOTER
+===================================== */
 
 footer {
     display: grid;
+
     grid-template-columns: 1fr auto;
+
     align-items: center;
     gap: 20px;
-    padding: 20px 5%;
-    background-color: var(--secondary-color);
-    color: #17313b;
+
+    padding: 20px 30px;
+
+    color: white;
+    background-color: var(--primary-color);
 }
 
 footer p {
     margin: 0;
+    text-align: center;
 }
 
-/* =========================
-   SOCIAL MEDIA
-========================= */
-
-.socialmedia {
+footer .socialmedia {
     display: flex;
+
     justify-content: flex-end;
     align-items: center;
+
     gap: 15px;
 }
 
-.socialmedia a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.socialmedia img {
+footer .socialmedia a {
     display: block;
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
 }
 
-/* =========================
-   TABLET LAYOUT
-========================= */
+footer .socialmedia img {
+    display: block;
 
-@media screen and (max-width: 900px) {
-    header {
-        grid-template-columns: 150px 1fr;
-        gap: 10px;
-    }
-
-    header img {
-        width: 140px;
-    }
-
-    header nav {
-        gap: 5px;
-    }
-
-    header nav a {
-        padding: 8px;
-    }
-
-    .history {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .history h2 {
-        grid-column: 1 / 3;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .adventure-gallery img {
-        height: 180px;
-    }
-}
-
-/* =========================
-   MOBILE LAYOUT
-========================= */
-
-@media screen and (max-width: 600px) {
-    header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 20px;
-    }
-
-    header img {
-        width: 150px;
-    }
-
-    header nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .hero > img {
-        height: 520px;
-    }
-
-    .hero h1 {
-        top: 20px;
-        font-size: 1.5rem;
-    }
-
-    .hero article {
-        top: 100px;
-        left: 4%;
-        right: 4%;
-        padding: 15px;
-    }
-
-    .hero article img {
-        float: none;
-        display: block;
-        width: 100%;
-        max-height: 150px;
-        object-fit: cover;
-        margin: 0 0 15px;
-    }
-
-    .history {
-        grid-template-columns: 1fr;
-        padding: 30px 5%;
-    }
-
-    .history h2 {
-        grid-column: 1;
-    }
-
-    .history img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
-    }
-
-    .adventure-gallery img {
-        height: 150px;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-    }
-
-    .socialmedia {
-        justify-content: center;
-    }
+    width: 30px;
+    height: 30px;
 }
